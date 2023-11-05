@@ -1,5 +1,4 @@
 import { promises as fs } from 'fs';
-import NavBar from './NavBar';
 
 export default async function Home() {
 
@@ -8,7 +7,6 @@ export default async function Home() {
 
   return (
     <main >
-      <NavBar />
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <h1>hello world!</h1>
         {
@@ -16,6 +14,7 @@ export default async function Home() {
             <h6 key={index}>{item.country}</h6>
           ))
         }
+
       </div>
     </main>
   )
